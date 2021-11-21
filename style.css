@@ -1,0 +1,85 @@
+/**/
+*{
+  margin: 0%;
+
+}
+html, body {
+  height: 100%;
+  --grey: hsl(240, 9%, 89%);
+  --black: hsl(240, 6%, 13%);
+}
+
+body{
+  display: grid;
+  align-items: center;
+  font-family: "Roboto", Verdana;
+  -webkit-font-smoothing: antialiased;
+}
+main {
+background: url(img/background.svg);
+height: 812px;
+width: 375px;
+}
+
+.container {
+  max-width: 15.6rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  color: var(--grey)
+}
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 1.5rem;
+  position: relative; /*colonando position "relative" não vai deixar o selo pegar o posição partida do "corpo inteiro" do body, tipo vai ser a medida terminante final */
+}
+
+.avatar span {
+  position: absolute; /*vai ficar em um layer na frente do objeto*/
+  top: -15px;
+  z-index: 1; /*a imagem ficou para trás por causa da configuração do clip-path, então precisou usar o z-index para ir para frente*/
+}
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover; /*serve para imagem não ficar distorcida e feia*/
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.50rem;
+}
+
+a{
+  color: var(--grey);
+  text-decoration: none;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  text-align: center;
+}
+p {
+margin-top: 2rem;
+text-shadow:
+-1px -1px 0 #000,
+ 0   -1px 0 #000,
+ 1px -1px 0 #000,
+ 1px  0   0 #000,
+ 1px  1px 0 #000,
+ 0    1px 0 #000,
+-1px  1px 0 #000,
+-1px  0   0 #000;
+}
+ul {
+  padding: 0;
+  margin-top: 4rem;
+
+  display: flex; /*deixar os tem itens juntos na minha linha horizontal*/
+  gap: 0.5rem; 
+
+  list-style: none;
+  justify-content: center;
+}
