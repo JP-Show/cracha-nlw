@@ -10,15 +10,17 @@ html, body {
 }
 
 body{
+
   display: grid;
   place-items: center;
   font-family: "Roboto", Verdana;
   -webkit-font-smoothing: antialiased;
 }
 main {
-background: url(img/background.svg);
-height: 812px;
-width: 23.44rem;
+background: url(img/background.svg) no-repeat center/cover;
+min-height: 812px;
+height: 100vh;
+width: 100vw
 }
 
 .container {

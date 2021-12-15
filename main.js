@@ -1,5 +1,5 @@
 const links = {
-  github: 'jp-show',
+  github: 'luizfeit',
   youtube: 'channel/UC4GBzpvrNrGumNmXhqrPOug',
   facebook: 'jpofi2021',
   instagram: 'jp_show.exe',
