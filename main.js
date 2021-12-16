@@ -29,6 +29,7 @@ function getGitHubInfoProfile() {
       userLinkGitHub.href = data.html_url
       userNickGitHub.innerText = data.login
       nameSite.innerText = `${firstName} ${lastName} - do While 2021`
+      nameFrontGit.innerText = data.login
     })
 }
 getGitHubInfoProfile()
