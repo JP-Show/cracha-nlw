@@ -21,7 +21,9 @@ main {
   height: 100vh;
   width: 100vw;
 }
-
+.faixa {
+  display: none;
+}
 .container {
   max-width: 15.6rem;
   margin-left: auto;
@@ -89,11 +91,12 @@ ul {
     width: 33.8125rem;
     height: 8.75rem;
   }
-}
-.faixa {
-  display: block;
-  position: absolute;
-  top: 0;
+
+  .faixa {
+    display: block;
+    position: absolute;
+    top: 0;
+  }
 }
 
 @media (max-width: 568px) {
