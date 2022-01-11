@@ -21,35 +21,6 @@ main {
   height: 100vh;
   width: 100vw;
 }
-.faixa {
-  display: none;
-}
-.container {
-  max-width: 15.6rem;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-
-  color: var(--grey);
-}
-.avatar {
-  width: 10rem;
-  margin: 11.5rem auto 1.5rem;
-  position: relative; /*colonando position "relative" não vai deixar o selo pegar o posição partida do "corpo inteiro" do body, tipo vai ser a medida terminante final */
-}
-
-.avatar span {
-  position: absolute; /*vai ficar em um layer na frente do objeto*/
-  top: -15px;
-  z-index: 1; /*a imagem ficou para trás por causa da configuração do clip-path, então precisou usar o z-index para ir para frente*/
-}
-.avatar > img {
-  width: 10rem;
-  height: 11.5rem;
-  object-fit: cover; /*serve para imagem não ficar distorcida e feia*/
-
-  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-}
 
 h1 {
   font-size: 1.5rem;
@@ -71,7 +42,7 @@ p {
 }
 ul {
   padding: 0;
-  margin-top: 4rem;
+  margin-top: 1rem;
 
   display: flex; /*deixar os tem itens juntos na minha linha horizontal*/
   gap: 0.5rem;
@@ -80,6 +51,35 @@ ul {
   justify-content: center;
 }
 
+.container {
+  max-width: 25.6rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--grey);
+}
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 1.5rem;
+  position: relative; /*colonando position "relative" não vai deixar o selo pegar o posição partida do "corpo inteiro" do body, tipo vai ser a medida terminante final */
+}
+
+.avatar span {
+  position: absolute; /*vai ficar em um layer na frente do objeto*/
+  top: -15px;
+  z-index: 1; /*a imagem ficou para trás por causa da configuração do clip-path, então precisou usar o z-index para ir para frente*/
+}
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover; /*serve para imagem não ficar distorcida e feia*/
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+/*breakpoint*/
+
+/*Desktop*/
 @media (min-width: 568px) {
   body {
     background: url(img/backDesktop.svg) no-repeat center/cover;
@@ -88,21 +88,32 @@ ul {
 
   main {
     background: url(img/cracha.svg) center;
+    position: absolute;
     width: 33.8125rem;
     height: 8.75rem;
+    top: 0%;
   }
-
+  .container {
+    max-width: 15.6rem;
+  }
+}
+/* faixa 
+  
+  
+  
+  
+  
   .faixa {
-    display: block;
+    display: flex;
     position: absolute;
-    top: 0;
-  }
-}
+    width: 64px;
+    height: 18.8vh;
+    align-items: flex-start;
+    left: calc(50% - 64px / 2);
 
-@media (max-width: 568px) {
-  .faixa {
-    display: none;
-    position: none;
-    top: none;
+    background: linear-gradient(161.24deg, #ff008e -15.25%, #ffcd1e 111.89%);
   }
-}
+
+  */
+
+/*Mobile*/
