@@ -14,6 +14,7 @@
 </g>
 </g>
 <rect x="680" y="156" width="80" height="8" fill="#121214"/>
+<rect x="688.5" y="0.5" width="63" height="157" fill="url(#paint6_linear_61385_101)" stroke="black"/>
 <defs>
 <linearGradient id="paint0_linear_61385_101" x1="540" y1="-344.234" x2="979.976" y2="-283.679" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FF008E"/>
@@ -38,6 +39,10 @@
 <linearGradient id="paint5_linear_61385_101" x1="720.4" y1="104.099" x2="809.316" y2="255.836" gradientUnits="userSpaceOnUse">
 <stop stop-color="#8257E5"/>
 <stop offset="1" stop-color="#FF008E" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint6_linear_61385_101" x1="649.5" y1="4.93019e-08" x2="782" y2="158" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF008E"/>
+<stop offset="1" stop-color="#FFCD1E"/>
 </linearGradient>
 </defs>
 </svg>
